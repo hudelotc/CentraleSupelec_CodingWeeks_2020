@@ -10,9 +10,9 @@ Comme c'est un outil fondamental pour tout travail de développement informatiqu
 ## Les ressources disponibles
 
 
-* Les slides du tutorial sont disponibles [ici]()
+* Les slides du tutorial sont disponibles [ici](./Files/cours.pdf)
 * De même, la vidéo du cours peut être consultée à tout moment [ici]()
-* Un cheatsheet à consulter à tout moment [ici](https://github.com/ehermellin/Introduction-Git/blob/master/cheatsheet.pdf)
+* Un cheatsheet à consulter à tout moment [ici](.Files/cheatsheet.pdf)
 * D'autres ressources intéressantes vous sont aussi conseillées :
 	* un rapide tutorial [ici](http://rogerdudler.github.io/git-guide/index.fr.html).
 	* [http://marklodato.github.io/visual-git-guide/index-en.html](http://marklodato.github.io/visual-git-guide/index-en.html)
@@ -35,7 +35,7 @@ En particulier, nous vous demandons avant de passer à la suite de :
 	*  `3: Merging in Git`
 	*  `4: Rebase Introduction`
 
-Vous devriez avoir ceci comme écran cela après la résolution de ces 4 challenges. **Faites une capture de cet écran, vous en aurez besoin par la suite.**
+Vous devriez avoir ceci comme écran cela après la résolution de ces 4 challenges. 
 
 
 <img src="./Images/gittuto.png" alt="drawing" width="500"/>
@@ -49,10 +49,13 @@ Vous devriez avoir ceci comme écran cela après la résolution de ces 4 challen
 	
 
 
-Vous devriez avoir ceci comme écran cela après la résolution de ces 4 challenges. **Faites une capture de cet écran, vous en aurez besoin par la suite.**
+Vous devriez avoir ceci comme écran cela après la résolution de ces 4 challenges. 
 
 
 <img src="./Images/gittuto2.png" alt="drawing" width="500"/>
+
+
+Quand vous avez terminé, vous pouvez faire le petit test de connaissance qui se trouve ici [TO DO].
 
  
  
