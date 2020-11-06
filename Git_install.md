@@ -362,7 +362,7 @@ vous permet d'avoir le détail des lignes qui ont été ajoutées et retirées d
 Dès lors, vous pouvez effectuer différents changements.
 
 * **Modifier le dernier message de commit** 
-* 
+ 
 ```
 git commit --amend -m "Message de commit mis à jour"
 ```
