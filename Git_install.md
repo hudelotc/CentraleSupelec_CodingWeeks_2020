@@ -322,11 +322,11 @@ L'option `--set-upstream` permettra que la branche existante fasse le suivi de l
 
 
 
- <img src="./Images/branchGitlab.png" alt="drawing" width="500"/>
+ <img src="./Images/branchgitlab.png" alt="drawing" width="500"/>
  
  et
  
-  <img src="./Images/branchGitlab2.png" alt="drawing" width="500"/>
+  <img src="./Images/branchgitlab2.png" alt="drawing" width="500"/>
   
   
 A ce stade, vous pouvez aussi mettre à jour votre dépôt local du distant avec la commande 
