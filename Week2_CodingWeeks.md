@@ -29,8 +29,7 @@ Pour pouvoir profiter au maximum des 4 jours de la semaine 2 pour concevoir et i
 Pour vous donner une idée, voici un exemple ci-dessous.
 
 
-<img src="./Images/padlet.png
-" alt="drawing" width="500"/>
+<img src="Images/padlet.png" alt="drawing" width="500"/>
 
 
 
