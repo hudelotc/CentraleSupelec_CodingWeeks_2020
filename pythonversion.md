@@ -2,7 +2,7 @@
 
 ## Connaître sa version de python
 
-Pour vérifier la version de python installer sur votre système il suffit de taper dans l'interpréteur de commandes:
+Pour vérifier la version de python installée sur votre système il suffit de taper dans l'interpréteur de commandes:
 
 ```
 python -V
