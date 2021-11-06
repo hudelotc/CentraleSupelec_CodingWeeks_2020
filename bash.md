@@ -27,7 +27,7 @@ On utilise une interface appelée shell pour communiquer entre l'utilisateur et 
 
 ## :point_right: J'ai ouvert nano
 
-nano est un éiteur de texte minimaliste. 
+nano est un éditeur de texte minimaliste. 
 
 
 ![Nano](./Images/nano.png)
@@ -52,3 +52,32 @@ Vim est un éditeur en ligne de commande. On le reconnaît souvent au mot-clé "
 * `esc` : sortir du mode insertion
 * `:x` ou `:wq` pour quitter en sauvegardant
 * `:q` pour quitter sans sauvegarder
+
+
+
+
+## Petit exercice d'entrainement
+
+Pour vous entrainez aux commandes de base, faites ce petit exercice d'entrainement.
+
+
+
+* Ouvrir un terminal : vous pouvez soit prendre le terminal intégré à VS Code soit prendre un terminal propre de votre OS (Terminal sur macOS or Linux, Git Bash sur Windows)
+* Quel est votre répertoire courant ? (:beginner: indice, commande `pwd`)
+* A l'aide de la commande `cd`, se placer dans son répertoire de travail (très souvent le répertoire `~/Documents`).
+* Afficher le contenu du répertoire (:beginner: indice, commande `ls`)
+* Créer un nouveau répertoire `TestBash` dans votre répertoire courant (:beginner: indice, commande `mkdir`)
+* Vérifier que ce répertoire est bien créé en réaffichant le contenu de votre répertoire courant.
+* Créer un nouveau fichier `HelloWorld.txt` dans ce répertoire (:beginner: indice, commande `touch`).
+* Editer le avec le contenu de votre choix (ici vous pouvez choisir de la faire avec VSCode comme éditeur mais c'est aussi une bonne occasion de tester `vim` ou `nano`)
+* Tester maintenant les commandes ci-dessous :
+	* 	`ls -a`
+	*  `ls -l`
+	*  `ls -t`
+Que font-elles ? (:beginner: [indice](http://www.commandeslinux.fr/commande-ls/))
+* Copier le contenu de votre fichier `HelloWorld.txt` dans le fichier `HelloWorldbis.txt` (:beginner: indice, commande [`cp`](https://www.commandeslinux.fr/commande-cp/))
+* Vérifier votre action
+* Supprimer le fichier `HelloWorldbis.txt` (:beginner: [indice](https://www.commandeslinux.fr/commande-rm/))
+
+Une fois ce petit exercice terminé, vous pouvez maintenant faire le petit test associé sur Edunao qui se trouve [ici](https://centralesupelec.edunao.com/mod/quiz/view.php?id=73157)
+
