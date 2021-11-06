@@ -99,6 +99,29 @@ La barre de statut indique toujours quel est l'environnement sélectionné.
 ![selected-interpreter-status-bar](./Images/selected-interpreter-status-bar.png)
 
 
+## Petit exercice d'entrainement
+
+Pour vous entrainez aux commandes de base, faites ce petit exercice d'entrainement.
 
 
+* Créer dans votre répertoire de travail un répertoire `TestEnv` et ajoutez y [ce fichier](https://github.com/hudelotc/CentraleSupelec_CodingWeeks_2020/blob/main/Codes/clustering.py). Il s'agit d'un fichier qui permet d'illustrer le fonctionnement de l'algoritme de clustering kmeans de la bibliothèque [`sklearn`](https://scikit-learn.org/stable/)
+* Ouvrir ce fichier avec Visual Studio Code 
+* Ouvrir le terminal intégré à VSCode.
+* Quel est l'environnement d'exécution python choisi par votre VSCode ? 
+* Executer le fichier depuis VSCode (avec la commande `Run Python File in Terminal`) (selon votre installation et python et l'environnement choisi, cela peut plus ou moins bien se passer).
+* Créer un environnement virtuel nommé `testsklearn` avec la commande `python -m venv testsklearn` dans le terminal intégré de VSCode
+* La fenêtre ci-dessous devrait s'afficher. Vous pouvez ignorer cette fenêtre ou cliquer sur `Yes` pour faire de cet environnement, l'environnement de votre workspace. 
 
+![env](./Images/envvsc.png)
+
+* Activer votre environnement virtuel avec la commande `source testsklearn/bin/activate`
+* Observez que votre invite de commande change.
+* A l'aide de la commande `pip` ou `pip3`, installer le package `matplotlib` et `sklearn` dans votre environnement `testsklearn` 
+	* `pip install matplotlib`
+	* `pip install sklearn`
+* Selectionner cet environnement comme environnement d'exécution dans VSCode et exécuter le fichier `clustering.py`
+* Desactiver votre environnement `testsklearn`  avec la commande `deactivate`
+
+Dans la suite de la semaine, vous pouvez ou non travailler avec des environnements virtuels. Dans tous les cas, il faudra bien être attentif à chaque fois à l'environnement d'execution de vos programmes car de nombreux bugs rencontrés viennent de la non-maitrise de cet aspect.
+
+Vous pouvez maintenant revenir à votre sujet de projet et continuez les tutos sur python.
