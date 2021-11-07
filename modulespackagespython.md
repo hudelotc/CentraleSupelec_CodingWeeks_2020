@@ -203,3 +203,25 @@ python -m B.main
 ```
 
 De cette manière, python utilisera le répertoire `P` comme répertoire de travail. Toute référence qu’il trouve (par ex., `from A.test import my_test`) sera interprétée relativement à ce répertoire.
+
+
+## Petit exercice d'entrainement
+
+
+Pour vous familiariser avec ces différentes notions, nous vous invitons à faire ce petit exercice.
+
+* Créer le projet avec la structure ci-dessous.
+
+![exemple](./Images/proj.png) 
+
+* Ecrire la fonction `fonction1` dans le fichier `module1.py` qui affiche un texte de votre choix.
+* Ecrire la fonction `fonction3` dans le fichier `module3.py` qui affiche un texte de votre choix. 
+* Ecrire la fonction `fonction2` dans le fichier `module2.py` qui appelle `fonction1` et `fonction3`. Il vous faudra pour cela gérer les imports. Essayez de le faire en absolu et en relatif.
+* Placer vous dans le répertoire `projet`
+* Excecuter le fichier `module2.py`
+
+
+
+
+
+
