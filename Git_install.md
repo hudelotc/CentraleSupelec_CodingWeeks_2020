@@ -17,57 +17,25 @@ Une des premières choses à faire avant cette mise en place est de vous accorde
 
 Pour commencer, vous allez configurer git et gitlab pour pouvoir travailler en groupe sur ce projet. Supposons que votre groupe est composé de 3 personnes : **A**, **B** et **C**.
 
-### Pour les 3 personnes : Connexion au serveur Gitlab et choix du protocole
+### :one: :abc: Pour les 3 personnes : Connexion au serveur Gitlab et choix du protocole
 
 
 * Chaque personne du groupe se connecte au serveur Gitlab de l'école dédié à son projet.
 * Pour se faciliter la vie, il est préférable d'utiliser le protocole `ssh` plutôt que `https`.
 
-#### Gitlab avec une clé SSH
-
-Pourquoi ? Pour éviter de devoir mettre ses identifiants à chaque `push / pull` comme c'est le cas avec https.
-Comment ? En utilisant le terminal (voir [Cheatsheet Bash](./bash.md)) et en suivant ce [tutoriel](https://docs.gitlab.com/ee/ssh/).
-
-Les principales étapes sont données ci-dessous.
-
-##### Générer une clé SSH
-
- Dans un terminal :`ssh-keygen -t ed25519 -C "<adresse mail>" `, cela génère une clé ssh chiffrée avec ed25519,remplacez <adresse mail> par votre adresse cs - c'est juste pour se rappeler de la clé ssh
-
-*  Toujours faire entrée sur les choix proposés et laisser une passphrase vide.
-*  Vous avez le choix entre clé RSA ou clé ed25519. Si vous connaissez pas la différence, faites	la ed25519. Si vous voulez faire la RSA, les commandes sont similaires (voir par exemple [ici](https://docs.gitlab.com/ee/ssh/))
-*  Si vous modifiez les choix par défaut, la commande suivante pour récupérer votre clépublique ne marchera pas. 
-	* Si par miracle vous arrivez à récupérer votre clé quand même à l'aide du terminal, il ya de grandes chances que vous vous preniez une erreur de permission denied(publickey) ( voir cette [erreur](https://forum.gitlab.com/t/permission-denied-publickey/29670/3) ) plus tard quand vous tentez de push ou pull. Si c'est lecas, le plus simple est de générer une nouvelle clé sans changer les choix par défaut.
-		*  Si vous choisissez une passphrase non vide, il faudra s'en rappeler, et la renseigner à chaque fois que vous faites un push ou pull avec git. C'est plus sur mais non nécessaire pour les coding weeks.
-
-* **Copier sa clé ssh**
-
-Dans un terminal:
-
-*  Mac : `pbcopy < ~/.ssh/id_ed25519.pub`
-*  Windows : `cat ~/.ssh/id_ed25519.pub | clip` 
-*  Si vous choisissez une autre méthode, faites attention à bien copier la totalité du fichier, sans oublier le début en `ed25519` ni la fin avec votre adresse mail si elle y est.
+:point_right: Voir [Gitlab avec une clé SSH](ssh.md)
 
 
-* **Ajouter votre clé ssh**
-Ajoutez votre clé ssh toute fraîchement copiée à votre compte gitlab. Cliquez sur votre petite icône en haut à droite, puis Settings, puis SSH Keys à gauche. Coller votre clé, donnez lui un petit nom pour vous en souvenir (pas besoin de date d'expiration). Cliquez sur Add key.Pour vos projets suivants, inutile de refaire une nouvelle clé !
-* Si vous utilisez le même domaine GitLab, la clé ssh est déjà enregistrée dans votre profil (sous Settings > SSH Keys)
-*  Si vous utilisez un autre domaine, ou GitHub, il suffit de copier la clé que vous avez généréprécédemment (reprendre l'étape "Copier sa clé ssh) et l'ajouter aux clés du nouveau
-domaine
-* Pour faire plus avancé, il est possible de créer plusieurs clés avec des permissions différentes(pour contrôler notamment la sécurité), mais ce n'est pas utile pour les codingweeks.
-* Si vous avez mis une date d'expiration, elle finira par expirer toute seule. Pour les Coding Weeks,c'est pas grave de laisser traîner des clés sur le GitLab de l'école. Si vous codez plus sérieusement, avec un compte perso et des projets à vous, il vaut mieux faire attention à ne pas laissertraîner des clés, c'est potentiellement une faille de sécurité. C'est une bonne pratique de les renouveler régulièrement.
 
-
-<span style="color: #26B260">A ce stade, tous les membres du groupe devraient avoir un compte sur Gitlab et une clé SSH</span> 
 
 
 
 Nous allons considérer que c'est ici la personne **A** qui prend la main.
 
 
-#### Consignes pour la personne **A**
+### :two: :a: Consignes pour la personne **A**
 
-Allez sur le serveur Gitlab qui vous est dédié et créez un dépôt (un projet) que vous nommerez `2048_game_by_Uranus_team`
+Aller sur le serveur Gitlab qui vous est dédié et créer un dépôt (un projet) que vous nommerez avec le nom retenu, ici `2048_game_by_Uranus_team` 
 
 
 <img src="./Images/Gitlab_project_1.png" alt="drawing" width="500"/>
@@ -82,16 +50,16 @@ Vous devriez avoir ensuite une vue comme celle ci-dessous.
 <img src="./Images/Gitlab_project_3.png" alt="drawing" width="500"/>
 
 
-##### Si besoin :  Ajouter une clé SSH à votre dépôt (si non fait auparavant)
+* **Si besoin :  Ajouter une clé SSH à votre dépôt (si non fait auparavant)**
 
 Si c'est le cas, la fenêtre jaune au dessus de la page vous alerte sur le fait que votre profil n'a pas de clé [SSH](https://fr.wikipedia.org/wiki/Secure_Shell) associée.
 
 **Si c'est le cas**, il vous faudra cliquer sur le bouton `ADD SSH key` et suivre les instructions qui vous sont données afin d'associer une clé SSH à votre profil et vous permettre d'utiliser votre dépôt correctement.
 
 
-##### Ajout de collaborateurs
+### :three: :a: Ajout de collaborateurs
 
-Vous allez maintenant ajouter les autres membres de votre groupe, vos enseignants référents et la responsable (identifiant : `@celine.hudelot`) comme collaborateur de votre dépôt.
+Vous allez maintenant ajouter les autres membres de votre groupe, vos enseignants référents ainsi que la responsable (identifiant : `@celine.hudelot`) comme collaborateur de votre dépôt.
 
 Pour cela, allez sur votre depôt GitLab et choisissez le menu `Members` dans la fenêtre de gauche. Ajouter votre binôme et votre enseignant comme collaborateur. Les différents membres de votre groupe seront *Maintainer* et vos enseignants et encadrants seront *Reporter*.
 
@@ -102,9 +70,9 @@ Les identifiants des personnes à ajouter vous seront communiquées le jour mêm
 
 
 
-#### Consignes pour tous les membres de groupe : personne **A**, **B** et **C**
+### :four: :abc: Consignes pour tous les membres de groupe : personnes **A**, **B** et **C**
 
-Chacun membre du groupe va maintenant devoir copier (cloner) ce dépôt sur son ordinateur. 
+Chacun des membres du groupe va maintenant devoir copier (cloner) ce dépôt sur son ordinateur. 
 
 + Ouvrez pour cela un terminal (vous pouvez utiliser le [terminal intégré à Visual Studio Code](https://code.visualstudio.com/docs/editor/integrated-terminal) si vous le souhaitez).
 
@@ -145,35 +113,10 @@ Un nouveau dossier devrait apparaître, vide pour le moment, car votre dépôt e
 
 
 * Si vous obtenez une erreur de certificat (qui sert à crypter vos échanges entre votre ordinateur et Gitlab), vous avez deux solutions possibles :
-	*  **Solution 1:** désactiver SSL
-	*  **Solution 2:** créer une paire de clés SSH (une privée et une publique)
-
-### Solution 1: désactiver SSL
+	*  **Solution 1:** [désactiver SSL](SSL.md)
+	*  **Solution 2:** [créer une paire de clés SSH (une privée et une publique)](sshkeys.md)
 
 
-A la place d'utiliser la commande `git clone`, utilisez ces commandes :
-
-```
-mkdir nom_de_votre_projet 
-cd nom_de_votre_projet
-git init
-git remote add origin "ladresse_du_depot_qui_commence_par_https"
-git config http.sslVerify false
-git pull origin master # cela peut prendre un peu de temps
-```
-
-### Solution 2 : créer une paire de clés SSH (une privée et une publique)
-
-<img src="./Images/gitlab4.png" alt="drawing" width="500"/>
-
-Lorsque vous générez la clé, laissez tous les champs vides. Pressez juste "Entrée" à chaque fois.
-
-Vous pouvez ensuite afficher votre clé publique via :
-
- `cat ~/.ssh/id_rsa.pub `
- 
- 
-Copiez-la ensuite dans le grand rectangle.
 
 Vous pouvez maintenant faire vos commits et "pusher" vos versions sur Gitlab.
 
@@ -220,10 +163,10 @@ git push origin master
 git pull origin master 
 ```
 
-## <span style="color: #26B260">A ce stade, tous les membres du projet doivent avoir une copie locale du projet hébergé sur GitLab par la personne A </span> 
+## <span style="color: #26B260"> :clap: A ce stade, tous les membres du projet doivent avoir une copie locale du projet hébergé sur GitLab par la personne A </span> 
 
 
-### A FAIRE : Un premier travail de code collaboratif
+## EXERCICE d'entrainement : Un premier travail de code collaboratif
 
 Pour vous familiariser avec le pipeline *classique* qu'il faut normalement suivre pour collaborer sur un projet de développement logiciel, nous allons faire un premier exercice qui va consister à écrire le fichier `README.md` de votre projet de manière collaborative.
 
@@ -256,7 +199,7 @@ git add README.md
 git commit -m "ADD README.md"
 ```
 
-*  **Action pour tous les membres de l'équipe** : Vous venez de modifier votre dépôt distant et donc l'ensemble de vos dépôts locaux ne sont plus synchronisés avec ce dépôt distant. Il est donc nécessaire, avant tout action, de resynchroniser votre repo local avec le distant. 
+*   **Action pour tous les membres de l'équipe** : Vous venez de modifier votre dépôt distant et donc l'ensemble de vos dépôts locaux ne sont plus synchronisés avec ce dépôt distant. Il est donc nécessaire, avant tout action, de resynchroniser votre repo local avec le distant. 
 
 Placez  vous à la racine de votre dépôt local et tapez la commande 
 
