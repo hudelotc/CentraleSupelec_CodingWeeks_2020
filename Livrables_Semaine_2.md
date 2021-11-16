@@ -1,8 +1,7 @@
 # Livrables Semaine 2
 
 
-L'évaluation du projet se fera par une soutenance de 20 min qui aura lieu le vendredi 19 novembre.
-
+L'évaluation du projet se fera par une soutenance de 20 min qui aura lieu le vendredi 19 novembre. Cette soutenance comprendra une présentation de votre projet (10 min maximum) puis une séance de questions.
 
 
 Votre présentation devra comporter les élèments suivants (qui ne sont pas forcément un plan):
