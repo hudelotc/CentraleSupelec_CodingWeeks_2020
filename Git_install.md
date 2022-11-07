@@ -59,7 +59,7 @@ Si c'est le cas, la fenêtre jaune au dessus de la page vous alerte sur le fait 
 
 ### :three: :a: Ajout de collaborateurs
 
-Vous allez maintenant ajouter les autres membres de votre groupe, vos enseignants référents ainsi que les responsables (Paolo Ballarini et Marc-Antoine Weisser, identifiants : @paolo.ballarini et @@Marc-Antoine.Weisser) comme collaborateur de votre dépôt.
+Vous allez maintenant ajouter les autres membres de votre groupe, vos enseignants référents ainsi que les responsables (Paolo Ballarini et Marc-Antoine Weisser, identifiants : @paolo.ballarini et @Marc-Antoine.Weisser) comme collaborateur de votre dépôt.
 
 Pour cela, allez sur votre depôt GitLab et choisissez le menu `Members` dans la fenêtre de gauche. Ajouter votre binôme et votre enseignant comme collaborateur. Les différents membres de votre groupe seront *Maintainer* et vos enseignants et encadrants seront *Reporter*.
 
