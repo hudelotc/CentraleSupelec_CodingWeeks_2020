@@ -55,7 +55,7 @@ Vous devriez avoir ceci comme écran cela après la résolution de ces 4 challen
 <img src="./Images/gittuto2.png" alt="drawing" width="500"/>
 
 
-Quand vous avez terminé, vous pouvez faire le petit test de connaissance qui se trouve sur l'espace commun des coding weeks (Campus Saclay) sur EDUNAO : [c'est ici](https://centralesupelec.edunao.com/mod/quiz/view.php?id=72936).
+Quand vous avez terminé, vous pouvez faire le petit test de connaissance qui se trouve sur l'espace commun des coding weeks (Campus Saclay) sur EDUNAO : [c'est ici](https://centralesupelec.edunao.com/mod/quiz/view.php?id=106586)
 
  
  
